@@ -38,4 +38,7 @@ function updateClipboard(newContent)
 // }
 // ---------------------------------------------------------------------
 
-window.addEventListener('click', function() { saveChatContent(); });
+window.addEventListener('mousedown', function() 
+{
+    saveChatContent(); 
+});

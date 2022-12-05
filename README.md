@@ -11,6 +11,6 @@ The extension requires manual adding to the browser as it is not yet signed.
 4. Select `Load Temporary Add-on` button.
 5. Select the `manifest.json` or `gptsave.js` file.
 
-When loaded simply click on the **Save** icon in the top right corner to copy the chat content.
+When loaded simply click on the **Save** icon in the top right corner or use a context menu option to copy the chat content.
 
 ![SaveIconView](https://raw.githubusercontent.com/Nesae-avi/Chat-GPT-Save/master/SaveIcon.PNG)

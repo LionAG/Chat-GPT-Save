@@ -3,6 +3,8 @@ A simple extension for saving the CHATGPT message history into clipboard.
 
 ## How to use
 
+You can now install the extension using this [link](https://addons.mozilla.org/en-US/firefox/addon/gptsave).
+
 The extension requires manual adding to the browser as it is not yet signed.
 
 1. Download and unpack the archive.

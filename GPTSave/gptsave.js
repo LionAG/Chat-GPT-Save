@@ -6,7 +6,7 @@ function saveChatContent()
 
   for(var x = 0; x < messages.length; x++)
   {
-    text += (x % 2 == 0 ? "USER:" : "AI:") + "\n\n";
+    text += (x % 2 == 0 ? "USER:" : "AI:") + "\n";
     text += messages[x].textContent + "\n\n";
   }
   

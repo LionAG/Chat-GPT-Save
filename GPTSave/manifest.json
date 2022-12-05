@@ -12,7 +12,8 @@
 
   "permissions": [
     "tabs",
-    "activeTab"
+    "activeTab",
+    "contextMenus"
   ],
 
   "browser_action": {

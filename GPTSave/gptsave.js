@@ -1,7 +1,6 @@
 function saveChatContent()
 {
   var messages = document.getElementsByClassName("min-h-[20px] whitespace-pre-wrap flex flex-col items-start gap-4");
-
   var text = "";
 
   for(var x = 0; x < messages.length; x++)
@@ -11,6 +10,7 @@ function saveChatContent()
   }
   
   updateClipboard(text);
+  alert("Copied chat content to clipboard!");
 }
 
 function updateClipboard(newContent)
@@ -24,21 +24,4 @@ function updateClipboard(newContent)
   });
 }
 
-
-// This code does not work on Firefox as "clipboard-write" is not valid.
-// function writeClipboardContent(text)
-// {
-//   navigator.permissions.query({name: "clipboard-write"}).then((result) => 
-//   {
-//     if (result.state === "granted" || result.state === "prompt")
-//     {
-//       updateClipboard(text);
-//     }
-//   });
-// }
-// ---------------------------------------------------------------------
-
-window.addEventListener('mousedown', function() 
-{
-    saveChatContent(); 
-});
+saveChatContent();

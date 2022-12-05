@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "CHATGPTSave",
-  "version": "1.0",
+  "version": "1.2",
 
   "description": "An extension for saving the CHAT GPT AI message history into clipboard.",
 
@@ -10,11 +10,25 @@
     
   },
 
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/save.svg",
+    "default_title": "Save GPT Chat"
+  },
+
   "content_scripts": [
     {
       "matches": ["*://chat.openai.com/chat"],
       "js": ["gptsave.js"]
     }
-  ]
+  ],
+
+  "background": {
+    "scripts": ["gptsave_background.js"]
+  }
 
 }

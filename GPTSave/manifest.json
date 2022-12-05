@@ -24,12 +24,12 @@
   "content_scripts": [
     {
       "matches": ["*://chat.openai.com/chat"],
-      "js": ["gptsave.js"]
+      "js": ["gptSave.js", "gptMsgPreserve.js"]
     }
   ],
 
   "background": {
-    "scripts": ["gptsave_background.js"]
+    "scripts": ["gptSaveBackground.js"]
   }
 
 }

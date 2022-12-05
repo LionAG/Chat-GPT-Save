@@ -12,7 +12,7 @@ browser.contextMenus.onClicked.addListener((info, tab) =>
   if(info.menuItemId === 'context-menu-save-gpt-chat')
   {
     browser.tabs.executeScript({
-      file: "gptsave.js"
+      file: "gptSave.js"
     });
   }
 });
@@ -20,6 +20,6 @@ browser.contextMenus.onClicked.addListener((info, tab) =>
 browser.browserAction.onClicked.addListener((tab) =>
 {
     browser.tabs.executeScript({
-      file: "gptsave.js"
+      file: "gptSave.js"
     });
 });

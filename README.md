@@ -3,7 +3,7 @@ A simple extension for saving the CHATGPT message history into clipboard.
 
 ## How to use
 
-The extension requires manual adding to the browser as it is not currently published.
+The extension requires manual adding to the browser as it is not yet signed.
 
 1. Download and unpack the archive.
 2. Open Firefox, type `about:debugging` in the address bar.

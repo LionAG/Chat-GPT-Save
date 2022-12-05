@@ -11,4 +11,6 @@ The extension requires manual adding to the browser as it is not currently publi
 4. Select `Load Temporary Add-on` button.
 5. Select the `manifest.json` or `gptsave.js` file.
 
-When loaded simply mouse click in the chat window to copy the current message history into clipboard.
+When loaded simply click on the **Save** icon in the top right corner to copy the chat content.
+
+![SaveIconView](https://raw.githubusercontent.com/Nesae-avi/Chat-GPT-Save/master/SaveIcon.PNG)

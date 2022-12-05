@@ -1,16 +1,25 @@
 function saveChatContent()
 {
   var messages = document.getElementsByClassName("min-h-[20px] whitespace-pre-wrap flex flex-col items-start gap-4");
-  var text = "";
 
-  for(var x = 0; x < messages.length; x++)
+  if(messages.length > 0)
   {
-    text += (x % 2 == 0 ? "USER:" : "AI:") + "\n";
-    text += messages[x].textContent + "\n\n";
+    var text = "";
+
+    for(var x = 0; x < messages.length; x++)
+    {
+      text += (x % 2 == 0 ? "USER:" : "AI:") + "\n";
+      text += messages[x].textContent + "\n\n";
+    }
+    
+    updateClipboard(text);
+
+    alert("Copied chat content to clipboard.");
   }
-  
-  updateClipboard(text);
-  alert("Copied chat content to clipboard!");
+  else
+  {
+    alert("Cannot find any messages! Make sure you have the chat tab open.");
+  }
 }
 
 function updateClipboard(newContent)
